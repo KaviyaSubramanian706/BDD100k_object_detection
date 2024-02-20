@@ -1,0 +1,17 @@
+{
+    "batch_size":4,
+    "epochs":3,
+    "image_size":224,
+    "image_channels":3,
+    "learning_rate":1e-2,
+    "model_name":"yolo_v8_large.h5",
+    "classes" :["pedestrian","rider","car","truck","bus","train","motorcycle","bicycle","traffic light","traffic sign"],
+    "train":{
+        "data_path":"D:\\Road_obj_det\\bdd100k_images_100k\\bdd100k\\images\\100k\\train",
+        "annot_path":"D:\\Road_obj_det\\bdd100k_images_100k\bdd100k\\labels\\det_20\\det_train.json"
+    },
+    "val":{
+        "data_path":"D:\\Road_obj_det\\bdd100k_images_100k\\bdd100k\\images\\100k\\val",
+        "annot_path":"D:\\Road_obj_det\\bdd100k_images_100k\\bdd100k\\labels\\det_20\\det_val.json"
+    }
+}
